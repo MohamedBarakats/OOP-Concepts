@@ -10,7 +10,7 @@ using namespace std;
     double radius; 
     string color;
  public:
- /*Circle(double r , string c): radius(r),color(c){ } another constructor defenition */
+ /*Circle(double r , string c): radius(r),color(c){ } Member Initializer List Provides no logic options */
  Circle(double r=1.5,string c="Red") {
  radius=r;
  color=c;
