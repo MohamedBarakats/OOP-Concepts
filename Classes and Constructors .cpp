@@ -17,6 +17,9 @@ using namespace std;
  }
     //double getRadius() const { return radius; } getters must be const  
 	//string getColor() const { return color; } getters must be const
+    double setRadius(double RadiusSetter) { radius=RadiusSetter;return 0;};
+    string setColor(string ColorSetter) {color=ColorSetter;return 0;};
+
     string getColor() {
 
         return color;
@@ -35,6 +38,10 @@ using namespace std;
 
 int main() {
  // Construct a Circle instance
+ Circle c;
+ c.setRadius(2.5);
+ c.setColor("RED");
+ cout<<"Setters Test=" <<c.getRadius()<<endl;
    Circle c1(1.2, "blue");
    cout << "Radius=" << c1.getRadius() << " Area=" << c1.getArea()
         << " Color=" << c1.getColor() << endl;
