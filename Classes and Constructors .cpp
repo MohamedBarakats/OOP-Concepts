@@ -15,7 +15,8 @@ using namespace std;
  radius=r;
  color=c;
  }
-
+    //double getRadius() const { return radius; } getters must be const  
+	//string getColor() const { return color; } getters must be const
     string getColor() {
 
         return color;
@@ -47,5 +48,7 @@ int main() {
    Circle c3;      // default radius and color
    cout << "Radius=" << c3.getRadius() << " Area=" << c3.getArea()
         << " Color=" << c3.getColor() << endl;
+
+
    return 0;
 }
